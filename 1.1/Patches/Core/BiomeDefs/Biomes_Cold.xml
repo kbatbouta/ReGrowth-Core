@@ -62,7 +62,7 @@
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/BiomeDef[defName = "Tundra"]/plantDensity</xpath>
 					<value>
-						<plantDensity>0.5</plantDensity>
+						<plantDensity>0.6</plantDensity>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd">
@@ -77,30 +77,6 @@
 					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/plantDensity</xpath>
 					<value>
 						<plantDensity>0.8</plantDensity>
-					</value>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants/Plant_TreeWillow</xpath>
-				</li>
-				<li Class="PatchOperationRemove">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants/Plant_TreeCypress</xpath>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
-					<value>
-						<Plant_Grass>4.4</Plant_Grass>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/wildPlants</xpath>
-					<value>
-						<Plant_TreePine>0.6</Plant_TreePine>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/terrainPatchMakers/li/thresholds[@name="MossyTerrain"]/min</xpath>
-					<value>
-						<plantDensity>0.4</plantDensity>
 					</value>
 				</li>
 			</operations>						
