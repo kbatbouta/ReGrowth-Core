@@ -72,5 +72,24 @@ namespace RegrowthCore
 		}
 	}
 
-	
+	[HarmonyPatch(typeof(MusicManagerPlay))]
+	[HarmonyPatch("ChooseNextSong")]
+	internal static class ChooseNextSong_Patch
+	{
+		private static void Postfix(SongDef __result)
+		{
+			Log.Message("ChooseNextSong: " + __result, true);
+		}
+	}
+
+	[HarmonyPatch(typeof(MusicManagerPlay))]
+	[HarmonyPatch("AppropriateNow")]
+	internal static class AppropriateNow_Patch
+	{
+		private static void Postfix(SongDef song, bool __result)
+		{
+			Log.Message("AppropriateNow_Patch: " + song + " - " + __result, true);
+		}
+	}
+
 }
