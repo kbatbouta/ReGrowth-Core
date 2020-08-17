@@ -1,86 +1,93 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Patch>
 
-	<Operation Class="PatchOperationFindMod">
+    <Operation Class="PatchOperationFindMod">
         <mods>
-          <li>Core</li>
+            <li>Core</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>
-			<operations>
-				<!-- ================ Biome Boreal ================ -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/plantDensity</xpath>
-					<value>
-						<plantDensity>1.0</plantDensity>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_Grass</xpath>
-					<value>
-						<Plant_Grass>10.0</Plant_Grass>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreePine</xpath>
-					<value>
-						<Plant_TreePine>4.0</Plant_TreePine>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreeBirch</xpath>
-					<value>
-						<Plant_TreeBirch>1.0</Plant_TreeBirch>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreePoplar</xpath>
-					<value>
-						<Plant_TreePoplar>0.8</Plant_TreePoplar>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_Berry</xpath>
-					<value>
-						<Plant_Berry>0.12</Plant_Berry>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
-					<value>
-						<Plant_TallGrass>2.5</Plant_TallGrass>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "BorealForest"]/animalDensity</xpath>
-					<value>
-						<animalDensity>2.8</animalDensity>
-					</value>
-				</li>
-				
-				<!-- ================ Biome Tundra ================ -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "Tundra"]/plantDensity</xpath>
-					<value>
-						<plantDensity>0.6</plantDensity>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
-					<value>
-						<Plant_Brambles>1.0</Plant_Brambles>
-					</value>
-				</li>
+            <operations>
 
-				<!-- ================ Biome Cold Bog ================ -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "ColdBog"]/plantDensity</xpath>
-					<value>
-						<plantDensity>0.8</plantDensity>
-					</value>
-				</li>
-			</operations>						
-		</match>
-	</Operation>
-	
+                <!-- ================ Biome Boreal ================ -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/plantDensity</xpath>
+                    <value>
+                        <plantDensity>1.0</plantDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_Grass</xpath>
+                    <value>
+                        <Plant_Grass>10.0</Plant_Grass>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreePine</xpath>
+                    <value>
+                        <Plant_TreePine>4.0</Plant_TreePine>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreeBirch</xpath>
+                    <value>
+                        <Plant_TreeBirch>1.0</Plant_TreeBirch>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_TreePoplar</xpath>
+                    <value>
+                        <Plant_TreePoplar>0.8</Plant_TreePoplar>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants/Plant_Berry</xpath>
+                    <value>
+                        <Plant_Berry>0.12</Plant_Berry>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+                    <value>
+                        <Plant_TallGrass>2.5</Plant_TallGrass>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/animalDensity</xpath>
+                    <value>
+                        <animalDensity>2.8</animalDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]</xpath>
+                    <value>
+                        <li Class=""></li>
+                    </value>
+                </li>
+
+                <!-- ================ Biome Tundra ================ -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "Tundra"]/plantDensity</xpath>
+                    <value>
+                        <plantDensity>0.6</plantDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
+                    <value>
+                        <Plant_Brambles>1.0</Plant_Brambles>
+                    </value>
+                </li>
+
+                <!-- ================ Biome Cold Bog ================ -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "ColdBog"]/plantDensity</xpath>
+                    <value>
+                        <plantDensity>0.8</plantDensity>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
 </Patch>
