@@ -1,4 +1,0 @@
-C:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Assemblies\RegrowthCore.dll
-C:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\RegrowthCore\obj\Debug\RegrowthCore.csprojAssemblyReference.cache
-C:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\RegrowthCore\obj\Debug\RegrowthCore.csproj.CoreCompileInputs.cache
-C:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\RegrowthCore\obj\Debug\RegrowthCore.dll
