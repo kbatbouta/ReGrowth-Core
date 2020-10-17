@@ -33,6 +33,12 @@
                         </wildPlants>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
+                    </value>
+                </li>
 
                 <!-- ================ Biome Boreal Tundra ================ -->
                 <li Class="PatchOperationReplace">
@@ -58,12 +64,40 @@
                         </wildPlants>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "Tundra"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
+                    </value>
+                </li>
 
                 <!-- ================ Biome Cold Bog ================ -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/BiomeDef[defName = "ColdBog"]/plantDensity</xpath>
                     <value>
                         <plantDensity>0.8</plantDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "ColdBog"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
+                    </value>
+                </li>
+				
+                <!-- ================ Biome Ice Sheet ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "IceSheet"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>20</RG_FoggySnow>
+                    </value>
+                </li>
+				
+                <!-- ================ Biome Sea Ice ================ -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "Sea Ice"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>6</RG_FoggySnow>
                     </value>
                 </li>
             </operations>

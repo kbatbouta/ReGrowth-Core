@@ -31,12 +31,24 @@
                         </wildPlants>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
+                    </value>
+                </li>
 
                 <!-- ================ Biome Desert ================ -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/BiomeDef[defName = "Desert"]/plantDensity</xpath>
                     <value>
                         <plantDensity>0.25</plantDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "Desert"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
                     </value>
                 </li>
 
@@ -51,6 +63,12 @@
                     <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants</xpath>
                     <value>
                         <Plant_PincushionCactus>1.2</Plant_PincushionCactus>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
                     </value>
                 </li>
             </operations>

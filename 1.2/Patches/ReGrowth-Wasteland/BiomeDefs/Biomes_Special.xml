@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Core</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+
+                <!-- ================ Biome ReGrowth Wasteland ================ -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "RG-W_Wasteland"]/plantDensity</xpath>
+                    <value>
+                        <plantDensity>0.76</plantDensity>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+
+</Patch>

@@ -34,6 +34,12 @@
                         </wildPlants>
                     </value>
                 </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
+                    </value>
+                </li>
 				
                 <!-- ================ Biome Tropical Swamp================ -->
                 <li Class="PatchOperationReplace">
@@ -63,6 +69,12 @@
                             <Plant_Berry>0.04</Plant_Berry>
                             <Plant_Rafflesia>0.010</Plant_Rafflesia>
                         </wildPlants>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/baseWeatherCommonalities</xpath>
+                    <value>
+                        <RG_FoggySnow>2</RG_FoggySnow>
                     </value>
                 </li>
             </operations>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>ReGrowth: Biomes of The Rim - Core</name>
+	<name>ReGrowth - Core</name>
 	<author>Helixien</author>
 	<supportedVersions>
 		<li>1.2</li>
@@ -15,9 +15,12 @@
 		<li>brrainz.harmony</li>
 	</loadAfter>
 	<loadBefore>
+		<li>ReGrowth.BOTR.Wasteland</li>
 		<li>ReGrowth.BOTR.BorealExpansion</li>
 		<li>ReGrowth.BOTR.TundraExpansion</li>
+		<li>ReGrowth.BOTR.TemperateForestExpansion</li>
 		<li>ReGrowth.BOTR.ColdBogExpansion</li>
+		<li>VanillaExpanded.VFEPower</li>
 	</loadBefore>
 
 </ModMetaData>
