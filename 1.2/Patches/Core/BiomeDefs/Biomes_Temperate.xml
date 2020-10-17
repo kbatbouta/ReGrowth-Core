@@ -28,7 +28,7 @@
 							<Plant_TreePoplar>1.0</Plant_TreePoplar>
 							<Plant_TreeTeak>0.2</Plant_TreeTeak>
 							<Plant_Berry>0.10</Plant_Berry>
-							<Plant_TreePine>1.2</Plant_TreePine>
+							<Plant_TreePine>0.8</Plant_TreePine>
 							<Plant_HealrootWild>0.05</Plant_HealrootWild>
                         </wildPlants>
                     </value>
