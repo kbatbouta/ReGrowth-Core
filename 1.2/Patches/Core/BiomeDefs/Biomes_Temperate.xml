@@ -3,72 +3,42 @@
 
 	<Operation Class="PatchOperationFindMod">
         <mods>
-          <li>Core</li>
+			<li>Core</li>
         </mods>
         <match Class="PatchOperationSequence">
             <success>Always</success>
 			<operations>
-				<!-- ================ Biome Temperate Forest ================ -->
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/plantDensity</xpath>
-					<value>
-						<plantDensity>1.2</plantDensity>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_Grass</xpath>
-					<value>
-						<Plant_Grass>8.0</Plant_Grass>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_Brambles</xpath>
-					<value>
-						<Plant_Brambles>1.0</Plant_Brambles>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_Dandelion</xpath>
-					<value>
-						<Plant_Dandelion>0.8</Plant_Dandelion>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_Bush</xpath>
-					<value>
-						<Plant_Bush>1.2</Plant_Bush>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_TreeOak</xpath>
-					<value>
-						<Plant_TreeOak>2.0</Plant_TreeOak>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_TreePoplar</xpath>
-					<value>
-						<Plant_TreePoplar>1.8</Plant_TreePoplar>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants/Plant_Berry</xpath>
-					<value>
-						<Plant_Berry>0.20</Plant_Berry>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd">
-					<xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
-					<value>
-						<Plant_TreePine>1.2</Plant_TreePine>
-					</value>
-				</li>
+                <!-- ================ Biome Temperate Forest ================ -->
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/plantDensity</xpath>
+                    <value>
+                        <plantDensity>1.2</plantDensity>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/wildPlants</xpath>
+                    <value>
+                        <wildPlants>
+                            <Plant_Grass>7.0</Plant_Grass>
+                            <Plant_TallGrass>2.0</Plant_TallGrass>
+                            <Plant_Brambles>1.0</Plant_Brambles>
+							<Plant_Dandelion>0.5</Plant_Dandelion>
+							<Plant_Bush>1.2</Plant_Bush>
+							<Plant_TreeOak>1.0</Plant_TreeOak>
+							<Plant_TreePoplar>1.0</Plant_TreePoplar>
+							<Plant_TreeTeak>0.2</Plant_TreeTeak>
+							<Plant_Berry>0.10</Plant_Berry>
+							<Plant_TreePine>1.2</Plant_TreePine>
+							<Plant_HealrootWild>0.05</Plant_HealrootWild>
+                        </wildPlants>
+                    </value>
+                </li>
 
 				<!-- ================ Biome Temperate Swamp ================ -->
 				<li Class="PatchOperationReplace">
 					<xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/plantDensity</xpath>
 					<value>
-						<plantDensity>1.2</plantDensity>
+						<plantDensity>1.8</plantDensity>
 					</value>
 				</li>
 			</operations>

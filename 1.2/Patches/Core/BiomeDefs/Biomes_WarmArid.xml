@@ -8,6 +8,7 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
+
                 <!-- ================ Biome Arid Shrubland ================ -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/plantDensity</xpath>
@@ -16,101 +17,26 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_Grass</xpath>
+                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants</xpath>
                     <value>
-                        <Plant_Grass>10.0</Plant_Grass>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_Dandelion</xpath>
-                    <value>
-                        <Plant_Dandelion>1.6</Plant_Dandelion>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_Bush</xpath>
-                    <value>
-                        <Plant_Bush>1.2</Plant_Bush>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_Agave</xpath>
-                    <value>
-                        <Plant_Agave>0.4</Plant_Agave>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_SaguaroCactus</xpath>
-                    <value>
-                        <Plant_SaguaroCactus>0.52</Plant_SaguaroCactus>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_PincushionCactus</xpath>
-                    <value>
-                        <Plant_PincushionCactus>0.52</Plant_PincushionCactus>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_Berry</xpath>
-                    <value>
-                        <Plant_Berry>0.20</Plant_Berry>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "AridShrubland"]/wildPlants/Plant_TreeDrago</xpath>
-                    <value>
-                        <Plant_TreeDrago>1.2</Plant_TreeDrago>
+                        <wildPlants>
+                            <Plant_Grass>7.0</Plant_Grass>
+                            <Plant_Dandelion>0.8</Plant_Dandelion>
+                            <Plant_Bush>0.7</Plant_Bush>
+                            <Plant_PincushionCactus>0.6</Plant_PincushionCactus>
+                            <Plant_Agave>0.2</Plant_Agave>
+                            <Plant_SaguaroCactus>0.26</Plant_SaguaroCactus>
+                            <Plant_TreeDrago>0.20</Plant_TreeDrago>
+                            <Plant_Berry>0.10</Plant_Berry>
+                        </wildPlants>
                     </value>
                 </li>
 
-                <!-- ================ Biome Desert Desert ================ -->
+                <!-- ================ Biome Desert ================ -->
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/BiomeDef[defName = "Desert"]/plantDensity</xpath>
                     <value>
-                        <plantDensity>0.10</plantDensity>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_Grass</xpath>
-                    <value>
-                        <Plant_Grass>8.0</Plant_Grass>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert]/wildPlants/Plant_Dandelion</xpath>
-                    <value>
-                        <Plant_Dandelion>1.0</Plant_Dandelion>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_Bush</xpath>
-                    <value>
-                        <Plant_Bush>0.25</Plant_Bush>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_SaguaroCactus</xpath>
-                    <value>
-                        <Plant_SaguaroCactus>1.2</Plant_SaguaroCactus>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_PincushionCactus</xpath>
-                    <value>
-                        <Plant_PincushionCactus>1.2</Plant_PincushionCactus>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_TreeDrago</xpath>
-                    <value>
-                        <Plant_TreeDrago>0.65</Plant_TreeDrago>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "Desert"]/wildPlants/Plant_Agave</xpath>
-                    <value>
-                        <Plant_Agave>0.5</Plant_Agave>
+                        <plantDensity>0.25</plantDensity>
                     </value>
                 </li>
 
@@ -119,24 +45,6 @@
                     <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/plantDensity</xpath>
                     <value>
                         <plantDensity>0.004</plantDensity>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants/Plant_Grass</xpath>
-                    <value>
-                        <Plant_Grass>8.0</Plant_Grass>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants/Plant_SaguaroCactus</xpath>
-                    <value>
-                        <Plant_SaguaroCactus>1.5</Plant_SaguaroCactus>
-                    </value>
-                </li>
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "ExtremeDesert"]/wildPlants/Plant_Agave</xpath>
-                    <value>
-                        <Plant_Agave>0.5</Plant_Agave>
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
