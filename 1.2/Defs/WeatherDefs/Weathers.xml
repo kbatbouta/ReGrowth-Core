@@ -28,7 +28,6 @@
                 <li>(1300, 1)</li>
             </points>
         </commonalityRainfallFactor>
-        <favorability>Neutral</favorability>
         <!-- Colors are Overcast -->
         <skyColorsDay>
             <sky>(0.8,0.8,0.8)</sky>
