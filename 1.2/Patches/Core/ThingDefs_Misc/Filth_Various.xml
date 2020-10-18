@@ -14,6 +14,18 @@
                         <rainWashes>true</rainWashes>
                     </value>
                 </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[@Name = "Filth_RubbleRock"]/filth</xpath>
+                    <value>
+                        <rainWashes>true</rainWashes>
+                    </value>
+                </li>
+                <li Class="PatchOperationRemove">
+                    <xpath>/Defs/ThingDef[@Name = "Filth_RubbleBuilding"]/filth</xpath>
+                    <value>
+                        <rainWashes>true</rainWashes>
+                    </value>
+                </li>
             </operations>
         </match>
     </Operation>
