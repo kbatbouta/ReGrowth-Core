@@ -17,7 +17,7 @@
       <li>Ambient_Rain</li>
     </ambientSounds>
     <overlayClasses>
-      <li>WeatherOverlay_Rain</li>
+		<li>ReGrowthCore.WeatherOverlay_DrizzleRain</li>
     </overlayClasses>
     <commonalityRainfallFactor>
       <points>

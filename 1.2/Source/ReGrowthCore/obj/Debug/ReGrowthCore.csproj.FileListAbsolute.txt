@@ -1,0 +1,6 @@
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Assemblies\ReGrowthCore.dll
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Assemblies\ReGrowthCore.pdb
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csprojAssemblyReference.cache
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CoreCompileInputs.cache
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.dll
+c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.pdb
