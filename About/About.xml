@@ -2,8 +2,9 @@
 <ModMetaData>
 
 	<name>ReGrowth - Core</name>
-	<author>Helixien</author>
+	<author>Helixien, Taranchuk</author>
 	<supportedVersions>
+		<li>1.1</li>
 		<li>1.2</li>
 	</supportedVersions>
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</url>
@@ -20,7 +21,12 @@
 		<li>ReGrowth.BOTR.TundraExpansion</li>
 		<li>ReGrowth.BOTR.TemperateForestExpansion</li>
 		<li>ReGrowth.BOTR.ColdBogExpansion</li>
-		<li>VanillaExpanded.VFEPower</li>
+		<li>Balthoraz.RimUniverse.BiomesModule</li>
 	</loadBefore>
+	<incompatibleWith>
+		<li>FrozenSnowFox.FilthVanishesWithRainAndTime</li>
+		<li>Shotgunfrenzy.Rain.Removes.Filth</li>
+		<li>HerdMigration.velcroboy333</li>
+	</incompatibleWith>
 
 </ModMetaData>
