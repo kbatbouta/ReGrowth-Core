@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThoughtDef>
+        <defName>RG_Wet</defName>
+        <durationDays>0.1</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>wet</label>
+                <description>I'm wet.</description>
+                <baseMoodEffect>-1</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

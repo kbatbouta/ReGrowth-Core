@@ -38,6 +38,7 @@
                     <xpath>/Defs/BiomeDef[defName = "TropicalRainforest"]/baseWeatherCommonalities</xpath>
                     <value>
                         <RG_FoggySnow>2</RG_FoggySnow>
+                        <RG_Drizzle>2</RG_Drizzle>
                     </value>
                 </li>
 				
@@ -75,6 +76,7 @@
                     <xpath>/Defs/BiomeDef[defName = "TropicalSwamp"]/baseWeatherCommonalities</xpath>
                     <value>
                         <RG_FoggySnow>2</RG_FoggySnow>
+                        <RG_Drizzle>2</RG_Drizzle>
                     </value>
                 </li>
             </operations>

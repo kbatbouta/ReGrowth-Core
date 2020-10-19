@@ -36,6 +36,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName = "TemperateForest"]/baseWeatherCommonalities</xpath>
                     <value>
+                        <RG_Drizzle>2</RG_Drizzle>
                         <RG_FoggySnow>2</RG_FoggySnow>
                     </value>
                 </li>
@@ -50,6 +51,7 @@
                 <li Class="PatchOperationAdd">
                     <xpath>/Defs/BiomeDef[defName = "TemperateSwamp"]/baseWeatherCommonalities</xpath>
                     <value>
+                        <RG_Drizzle>2</RG_Drizzle>
                         <RG_FoggySnow>2</RG_FoggySnow>
                     </value>
                 </li>

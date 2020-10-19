@@ -4,53 +4,52 @@
     <WeatherDef>
         <defName>RG_Drizzle</defName>
         <label>drizzle</label>
-    <description>Very light rain that doesnt effect people.</description>
-    <temperatureRange>0~100</temperatureRange>
-    <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.8</accuracyMultiplier>
-    <favorability>Neutral</favorability>
-    <perceivePriority>1</perceivePriority>
-    <exposedThought>SoakingWet</exposedThought>
-    <rainRate>0.2</rainRate>
-    <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
-    <ambientSounds>
-      <li>Ambient_Rain</li>
-    </ambientSounds>
-    <overlayClasses>
-		<li>ReGrowthCore.WeatherOverlay_DrizzleRain</li>
-    </overlayClasses>
-    <commonalityRainfallFactor>
-      <points>
-        <li>(0, 0)</li>
-        <li>(1300, 1)</li>
-        <li>(4000, 3.0)</li>
-      </points>
-    </commonalityRainfallFactor>
-    <!-- Colors are Overcast -->
-    <skyColorsDay>
-      <sky>(0.8,0.8,0.8)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.7,0.7,0.7)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDay>
-    <skyColorsDusk>
-      <sky>(1,1,1)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDusk>
-    <skyColorsNightEdge>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightEdge>
-    <skyColorsNightMid>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightMid>
+        <description>Very light rain that doesnt effect people.</description>
+        <temperatureRange>0~100</temperatureRange>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <favorability>Neutral</favorability>
+        <perceivePriority>1</perceivePriority>
+        <exposedThought>RG_Wet</exposedThought>
+        <rainRate>0.2</rainRate>
+        <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
+        <ambientSounds>
+            <li>Ambient_Rain</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>ReGrowthCore.WeatherOverlay_DrizzleRain</li>
+        </overlayClasses>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(1300, 1)</li>
+                <li>(4000, 3.0)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <skyColorsDay>
+            <sky>(0.8,0.8,0.8)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.7,0.7,0.7)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightMid>
     </WeatherDef>
 
     <WeatherDef>
@@ -80,7 +79,6 @@
                 <li>(1300, 1)</li>
             </points>
         </commonalityRainfallFactor>
-        <!-- Colors are Overcast -->
         <skyColorsDay>
             <sky>(0.8,0.8,0.8)</sky>
             <shadow>(0.92,0.92,0.92)</shadow>
