@@ -28,7 +28,7 @@
                             <Plant_TreeOak>0.2</Plant_TreeOak>
                             <Plant_TreePoplar>0.2</Plant_TreePoplar>
                             <Plant_Berry>0.15</Plant_Berry>
-                            <Plant_TreePine>1.2</Plant_TreePine>
+                            <Plant_TreePine>1.4</Plant_TreePine>
                             <Plant_HealrootWild>0.05</Plant_HealrootWild>
                         </wildPlants>
                     </value>
@@ -49,7 +49,7 @@
                     </value>
                 </li>
                 <li Class="PatchOperationReplace">
-                    <xpath>/Defs/BiomeDef[defName = "BorealForest"]/wildPlants</xpath>
+                    <xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
                     <value>
                         <wildPlants>
                             <Plant_Grass>3.6</Plant_Grass>
