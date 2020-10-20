@@ -14,7 +14,7 @@
         <rainRate>0.2</rainRate>
         <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
         <ambientSounds>
-            <li>Ambient_Rain</li>
+            <li>RG_Ambient_Drizzle</li>
         </ambientSounds>
         <overlayClasses>
             <li>ReGrowthCore.WeatherOverlay_DrizzleRain</li>
@@ -67,6 +67,7 @@
         <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
         <ambientSounds>
             <li>Ambient_Wind_Fog</li>
+			<li>Ambient_Wind_Storm</li>
         </ambientSounds>
         <overlayClasses>
             <li>WeatherOverlay_Fog</li>
