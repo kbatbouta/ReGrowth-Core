@@ -21,6 +21,9 @@ namespace ReGrowthCore
 			if (worldOverlayMat == null)
             {
 				worldOverlayMat = MaterialPool.MatFrom("Weather/DrizzleRainWorldOverlay");
+				worldOverlayMat.CopyPropertiesFromMaterial(MatLoader.LoadMat("Weather/RainOverlayWorld"));
+				worldOverlayMat.shader = MatLoader.LoadMat("Weather/RainOverlayWorld").shader;
+				worldOverlayMat.mainTexture = ContentFinder<Texture2D>.Get("Weather/DrizzleRainWorldOverlay");
 			}
 			base.TickOverlay(map);
 		}

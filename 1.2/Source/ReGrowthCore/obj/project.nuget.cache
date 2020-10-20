@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+0pIb7n/qjsEdCI1sgoqCkB8s+0XDtI2PsrLJ5z7Q4pQ68dQnZrhyxrBAYpOvWDk80NZXO/Bluk9WoofZTfZhA==",
+  "dgSpecHash": "BUnvLU+ip1s6Ourx+nXqglEEKNYhgp3lZzG0Xh3C8V/Y/E3KO12nBh9lGA3mXzCJpUe4u/bP+5IIQGPcupumhg==",
   "success": true,
-  "projectFilePath": "c:\\GAMES\\Rimworld\\Mods\\ReGrowth-Core\\1.2\\Source\\ReGrowthCore\\ReGrowthCore.csproj",
+  "projectFilePath": "C:\\GAMES\\Rimworld\\Mods\\ReGrowth-Core\\1.2\\Source\\RegrowthCore\\ReGrowthCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vova\\.nuget\\packages\\krafs.rimworld.ref\\1.2.2753\\krafs.rimworld.ref.1.2.2753.nupkg.sha512"
   ],
