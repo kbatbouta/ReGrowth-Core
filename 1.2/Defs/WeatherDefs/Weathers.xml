@@ -2,11 +2,84 @@
 <Defs>
 
     <WeatherDef>
+        <defName>RG_Overcast</defName>
+        <label>Overcast</label>
+        <description>Clouds cover the sky, but there is no rain.</description>
+        <repeatable>true</repeatable>
+        <favorability>Neutral</favorability>
+        <perceivePriority>0</perceivePriority>
+        <ambientSounds>
+            <li>AmbientWind_Clear</li>
+        </ambientSounds>
+        <skyColorsDay>
+            <sky>(0.8,0.8,0.8)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.7,0.7,0.7)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>RG_Windy</defName>
+        <label>windy</label>
+        <description>Light winds help turbines but reduces the accuracy of ranged weapons.</description>
+        <repeatable>true</repeatable>
+        <favorability>Neutral</favorability>
+        <windSpeedFactor>1.0</windSpeedFactor>
+        <accuracyMultiplier>0.75</accuracyMultiplier>
+        <ambientSounds>
+            <li>AmbientWind_Storm</li>
+        </ambientSounds>
+        <skyColorsDay>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.718,0.745,0.757)</shadow>
+            <overlay>(1,1,1)</overlay>
+            <saturation>1.25</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(0.858,0.650,0.423)</sky>
+            <shadow>(0.955,0.886,0.914)</shadow>
+            <overlay>(0.8,0.8,0.8)</overlay>
+            <saturation>1.25</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.482,0.603,0.682)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>1.25</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.482,0.603,0.682)</sky>
+            <shadow>(0.85, 0.85, 0.85)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>1.25</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
         <defName>RG_Drizzle</defName>
         <label>drizzle</label>
         <description>Very light rain that doesnt effect people.</description>
         <temperatureRange>0~100</temperatureRange>
-        <windSpeedFactor>1.5</windSpeedFactor>
+        <windSpeedFactor>1.0</windSpeedFactor>
         <accuracyMultiplier>0.8</accuracyMultiplier>
         <favorability>Neutral</favorability>
         <perceivePriority>1</perceivePriority>
@@ -67,11 +140,11 @@
         <moveSpeedMultiplier>0.7</moveSpeedMultiplier>
         <ambientSounds>
             <li>Ambient_Wind_Fog</li>
-			<li>Ambient_Wind_Storm</li>
+            <li>Ambient_Wind_Storm</li>
         </ambientSounds>
         <overlayClasses>
             <li>WeatherOverlay_Fog</li>
-            <li>WeatherOverlay_SnowHard</li>
+            <li>WeatherOverlay_SnowGentle</li>
         </overlayClasses>
         <commonalityRainfallFactor>
             <points>
@@ -105,5 +178,58 @@
             <saturation>0.9</saturation>
         </skyColorsNightMid>
     </WeatherDef>
+	
+  <WeatherDef>
+    <defName>RG_Blizzard</defName>
+    <label>blizzard</label>
+    <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+    <temperatureRange>-999~-0.5</temperatureRange>
+    <snowRate>1.2</snowRate>
+    <windSpeedFactor>1.5</windSpeedFactor>
+    <accuracyMultiplier>0.8</accuracyMultiplier>
+    <favorability>Neutral</favorability>
+    <perceivePriority>1</perceivePriority>
+    <rainRate>1</rainRate>
+    <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+    <commonalityRainfallFactor>
+      <points>
+        <li>(0, 0)</li>
+        <li>(300,0.5)</li>
+        <li>(1300, 1)</li>
+      </points>
+    </commonalityRainfallFactor>
+    <ambientSounds>
+      <li>Ambient_Wind_Storm</li>
+    </ambientSounds>
+    <overlayClasses>
+      <li>WeatherOverlay_SnowHard</li>
+      <li>WeatherOverlay_SnowHard</li>
+    </overlayClasses>
+    <!-- Colors are Overcast -->
+    <skyColorsDay>
+      <sky>(0.8,0.8,0.8)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.7,0.7,0.7)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDay>
+    <skyColorsDusk>
+      <sky>(1,1,1)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.6,0.6,0.6)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsDusk>
+    <skyColorsNightEdge>
+      <sky>(0.35,0.40,0.45)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.5,0.5,0.5)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightEdge>
+    <skyColorsNightMid>
+      <sky>(0.35,0.40,0.45)</sky>
+      <shadow>(0.92,0.92,0.92)</shadow>
+      <overlay>(0.5,0.5,0.5)</overlay>
+      <saturation>0.9</saturation>
+    </skyColorsNightMid>
+  </WeatherDef>
 
 </Defs>
