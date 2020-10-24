@@ -10,24 +10,22 @@
 	<url>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</url>
 	<packageId>ReGrowth.BOTR.Core</packageId>
 	<description>Check the workshop page for information.</description>
+	<modDependencies>
+        <li>
+            <packageId>ReGrowth.BOTR.Core</packageId>
+            <displayName>>ReGrowth - Core</displayName>
+            <downloadUrl>https://github.com/Helixien/ReGrowth-TemperateForest</downloadUrl>
+            <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569</steamWorkshopUrl>
+        </li>
+    </modDependencies>
 	<loadAfter>
 		<li>Ludeon.RimWorld</li>
 		<li>Ludeon.RimWorld.Royalty</li>
 		<li>brrainz.harmony</li>
+		<li>ReGrowth.BOTR.Core</li>
 	</loadAfter>
 	<loadBefore>
-		<li>ReGrowth.BOTR.Wasteland</li>
-		<li>ReGrowth.BOTR.BorealExpansion</li>
-		<li>ReGrowth.BOTR.TundraExpansion</li>
-		<li>ReGrowth.BOTR.TemperateForestExpansion</li>
-		<li>ReGrowth.BOTR.ColdBogExpansion</li>
 		<li>Balthoraz.RimUniverse.BiomesModule</li>
 	</loadBefore>
-	<incompatibleWith>
-		<li>FrozenSnowFox.FilthVanishesWithRainAndTime</li>
-		<li>Shotgunfrenzy.Rain.Removes.Filth</li>
-		<li>HerdMigration.velcroboy333</li>
-		<li>ONegative.AnimatedMarshes</li>
-	</incompatibleWith>
 
 </ModMetaData>
