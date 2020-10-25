@@ -11,6 +11,9 @@
         <ambientSounds>
             <li>AmbientWind_Clear</li>
         </ambientSounds>
+        <overlayClasses>
+            <li>ReGrowthCore.WeatherOverlay_Overcast</li>
+        </overlayClasses>
         <skyColorsDay>
             <sky>(0.8,0.8,0.8)</sky>
             <shadow>(0.92,0.92,0.92)</shadow>
