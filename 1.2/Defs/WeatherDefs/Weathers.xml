@@ -4,7 +4,7 @@
     <WeatherDef>
         <defName>RG_Overcast</defName>
         <label>Overcast</label>
-        <description>Clouds cover the sky, but there is no rain.</description>
+        <description>Clouds cover the sky, but it is not raining.</description>
         <repeatable>true</repeatable>
         <favorability>Neutral</favorability>
         <perceivePriority>0</perceivePriority>

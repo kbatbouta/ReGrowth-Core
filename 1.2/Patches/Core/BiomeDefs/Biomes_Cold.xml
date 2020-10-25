@@ -38,6 +38,8 @@
                     <value>
                         <RG_Drizzle>2</RG_Drizzle>
                         <RG_FoggySnow>2</RG_FoggySnow>
+                        <RG_Overcast>10</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
                     </value>
                 </li>
 
@@ -70,6 +72,8 @@
                     <value>
                         <RG_Drizzle>2</RG_Drizzle>
                         <RG_FoggySnow>2</RG_FoggySnow>
+                        <RG_Overcast>10</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
                     </value>
                 </li>
 
@@ -85,6 +89,8 @@
                     <value>
                         <RG_Drizzle>2</RG_Drizzle>
                         <RG_FoggySnow>2</RG_FoggySnow>
+                        <RG_Overcast>10</RG_Overcast>
+						<RG_Windy>8</RG_Windy>
                     </value>
                 </li>
 				
@@ -93,6 +99,8 @@
                     <xpath>/Defs/BiomeDef[defName = "IceSheet"]/baseWeatherCommonalities</xpath>
                     <value>
                         <RG_FoggySnow>20</RG_FoggySnow>
+                        <RG_Overcast>12</RG_Overcast>
+						<RG_Windy>6</RG_Windy>
                     </value>
                 </li>
 				
@@ -101,6 +109,8 @@
                     <xpath>/Defs/BiomeDef[defName = "Sea Ice"]/baseWeatherCommonalities</xpath>
                     <value>
                         <RG_FoggySnow>6</RG_FoggySnow>
+                        <RG_Overcast>12</RG_Overcast>
+						<RG_Windy>6</RG_Windy>
                     </value>
                 </li>
             </operations>
