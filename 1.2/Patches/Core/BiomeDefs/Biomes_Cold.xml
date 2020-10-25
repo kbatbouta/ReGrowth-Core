@@ -40,6 +40,7 @@
                         <RG_FoggySnow>2</RG_FoggySnow>
                         <RG_Overcast>10</RG_Overcast>
 						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
                     </value>
                 </li>
 
@@ -74,6 +75,7 @@
                         <RG_FoggySnow>2</RG_FoggySnow>
                         <RG_Overcast>10</RG_Overcast>
 						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
                     </value>
                 </li>
 
@@ -91,6 +93,7 @@
                         <RG_FoggySnow>2</RG_FoggySnow>
                         <RG_Overcast>10</RG_Overcast>
 						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
                     </value>
                 </li>
 				
@@ -101,6 +104,7 @@
                         <RG_FoggySnow>20</RG_FoggySnow>
                         <RG_Overcast>12</RG_Overcast>
 						<RG_Windy>6</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
                     </value>
                 </li>
 				
@@ -111,6 +115,7 @@
                         <RG_FoggySnow>6</RG_FoggySnow>
                         <RG_Overcast>12</RG_Overcast>
 						<RG_Windy>6</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
                     </value>
                 </li>
             </operations>

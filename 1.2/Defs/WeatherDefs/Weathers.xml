@@ -80,14 +80,14 @@
     <WeatherDef>
         <defName>RG_Drizzle</defName>
         <label>drizzle</label>
-        <description>Very light rain that doesnt effect people.</description>
+        <description>Very light rain. It barely effects ranged weapons or people.</description>
         <temperatureRange>0~100</temperatureRange>
         <windSpeedFactor>1.0</windSpeedFactor>
-        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <accuracyMultiplier>0.9</accuracyMultiplier>
         <favorability>Neutral</favorability>
         <perceivePriority>1</perceivePriority>
         <exposedThought>RG_Wet</exposedThought>
-        <rainRate>0.2</rainRate>
+        <rainRate>0.5</rainRate>
         <moveSpeedMultiplier>0.9</moveSpeedMultiplier>
         <ambientSounds>
             <li>RG_Ambient_Drizzle</li>
@@ -185,7 +185,7 @@
     <WeatherDef>
         <defName>RG_Blizzard</defName>
         <label>blizzard</label>
-        <description>Blizzard extremly reducesthe accuracy of ranged weapon and slows people down.</description>
+        <description>Strong snowfall and wind extremly reducesthe accuracy of ranged weapon and slows people down.</description>
         <temperatureRange>-999~-0.5</temperatureRange>
         <snowRate>2.0</snowRate>
         <windSpeedFactor>2.0</windSpeedFactor>
@@ -236,8 +236,8 @@
 
     <WeatherDef>
         <defName>RG_Monsoon</defName>
-        <label>Monsoon</label>
-        <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+        <label>monsoon</label>
+        <description>Extreme rain, extinguishes fire, reduces weapon accuracy and slows people down.</description>
         <temperatureRange>0~999</temperatureRange>
         <windSpeedFactor>1.0</windSpeedFactor>
         <accuracyMultiplier>0.4</accuracyMultiplier>
@@ -289,14 +289,14 @@
 
     <WeatherDef>
         <defName>RG_Sandstorm</defName>
-        <label>Sandstorm</label>
-        <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+        <label>sandstorm</label>
+        <description>Strong wind blows sand everywhere. Reduces ranged weapon accuracy and slows people down.</description>
         <temperatureRange>-999~999</temperatureRange>
         <windSpeedFactor>1.5</windSpeedFactor>
-        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <accuracyMultiplier>0.5</accuracyMultiplier>
         <favorability>Bad</favorability>
         <perceivePriority>1</perceivePriority>
-        <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+        <moveSpeedMultiplier>0.5</moveSpeedMultiplier>
         <exposedThought>RG_Sandy</exposedThought>
         <commonalityRainfallFactor>
             <points>

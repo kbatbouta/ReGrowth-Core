@@ -40,6 +40,8 @@
                         <RG_FoggySnow>2</RG_FoggySnow>
                         <RG_Overcast>10</RG_Overcast>
 						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
+						<RG_Monsoon>0.5</RG_Monsoon>
                     </value>
                 </li>
 
@@ -57,6 +59,8 @@
                         <RG_FoggySnow>2</RG_FoggySnow>
                         <RG_Overcast>10</RG_Overcast>
 						<RG_Windy>8</RG_Windy>
+						<RG_Blizzard>0.5</RG_Blizzard>
+						<RG_Monsoon>0.5</RG_Monsoon>
                     </value>
                 </li>
 			</operations>
