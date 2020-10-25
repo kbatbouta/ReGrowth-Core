@@ -15,28 +15,28 @@
             <li>ReGrowthCore.WeatherOverlay_Overcast</li>
         </overlayClasses>
         <skyColorsDay>
-			<sky>(1,1,1)</sky>
-			<shadow>(0.718,0.745,0.757)</shadow>
-			<overlay>(1,1,1)</overlay>
-			<saturation>1.25</saturation>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.718,0.745,0.757)</shadow>
+            <overlay>(1,1,1)</overlay>
+            <saturation>1.25</saturation>
         </skyColorsDay>
         <skyColorsDusk>
-			<sky>(0.858,0.650,0.423)</sky>
-			<shadow>(0.955,0.886,0.914)</shadow>
-			<overlay>(1,1,1, 0.5)</overlay>
-			<saturation>1.25</saturation>
+            <sky>(0.858,0.650,0.423)</sky>
+            <shadow>(0.955,0.886,0.914)</shadow>
+            <overlay>(1,1,1, 0.5)</overlay>
+            <saturation>1.25</saturation>
         </skyColorsDusk>
         <skyColorsNightEdge>
-			<sky>(0.482,0.603,0.682)</sky>
-			<shadow>(0.92,0.92,0.92)</shadow>
-			<overlay>(1,1,1, 0.0)</overlay>
-			<saturation>1.25</saturation>
+            <sky>(0.482,0.603,0.682)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(1,1,1, 0.0)</overlay>
+            <saturation>1.25</saturation>
         </skyColorsNightEdge>
         <skyColorsNightMid>
-			<sky>(0.482,0.603,0.682)</sky>
-			<shadow>(0.85, 0.85, 0.85)</shadow>
-			<overlay>(1,1,1, 0.0)</overlay>
-			<saturation>1.25</saturation>
+            <sky>(0.482,0.603,0.682)</sky>
+            <shadow>(0.85, 0.85, 0.85)</shadow>
+            <overlay>(1,1,1, 0.0)</overlay>
+            <saturation>1.25</saturation>
         </skyColorsNightMid>
     </WeatherDef>
 
@@ -181,165 +181,161 @@
             <saturation>0.9</saturation>
         </skyColorsNightMid>
     </WeatherDef>
-	
-  <WeatherDef>
-    <defName>RG_Blizzard</defName>
-    <label>blizzard</label>
-    <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
-    <temperatureRange>-999~-0.5</temperatureRange>
-    <snowRate>1.2</snowRate>
-    <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.8</accuracyMultiplier>
-    <favorability>Neutral</favorability>
-    <perceivePriority>1</perceivePriority>
-    <rainRate>1</rainRate>
-    <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-    <commonalityRainfallFactor>
-      <points>
-        <li>(0, 0)</li>
-        <li>(300,0.5)</li>
-        <li>(1300, 1)</li>
-      </points>
-    </commonalityRainfallFactor>
-    <ambientSounds>
-      <li>Ambient_Wind_Storm</li>
-    </ambientSounds>
-    <overlayClasses>
-		<li>ReGrowthCore.WeatherOverlay_Blizzard</li>
-    </overlayClasses>
-    <!-- Colors are Overcast -->
-    <skyColorsDay>
-      <sky>(0.8,0.8,0.8)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.7,0.7,0.7)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDay>
-    <skyColorsDusk>
-      <sky>(1,1,1)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDusk>
-    <skyColorsNightEdge>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightEdge>
-    <skyColorsNightMid>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightMid>
-  </WeatherDef>
-  
-  
-  	
-  <WeatherDef>
-    <defName>RG_Monsoon</defName>
-    <label>Monsoon</label>
-    <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
-    <temperatureRange>-999~-0.5</temperatureRange>
-    <snowRate>1.2</snowRate>
-    <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.8</accuracyMultiplier>
-    <favorability>Neutral</favorability>
-    <perceivePriority>1</perceivePriority>
-    <rainRate>1</rainRate>
-    <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-    <commonalityRainfallFactor>
-      <points>
-        <li>(0, 0)</li>
-        <li>(300,0.5)</li>
-        <li>(1300, 1)</li>
-      </points>
-    </commonalityRainfallFactor>
-    <ambientSounds>
-      <li>Ambient_Wind_Storm</li>
-    </ambientSounds>
-    <overlayClasses>
-		<li>ReGrowthCore.WeatherOverlay_Monsoon</li>
-    </overlayClasses>
-    <!-- Colors are Overcast -->
-    <skyColorsDay>
-      <sky>(0.8,0.8,0.8)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.7,0.7,0.7)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDay>
-    <skyColorsDusk>
-      <sky>(1,1,1)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDusk>
-    <skyColorsNightEdge>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightEdge>
-    <skyColorsNightMid>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightMid>
-  </WeatherDef>
-  
-  
-  	
-  <WeatherDef>
-    <defName>RG_Sandstorm</defName>
-    <label>Sandstorm</label>
-    <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
-    <temperatureRange>-999~-0.5</temperatureRange>
-    <snowRate>1.2</snowRate>
-    <windSpeedFactor>1.5</windSpeedFactor>
-    <accuracyMultiplier>0.8</accuracyMultiplier>
-    <favorability>Neutral</favorability>
-    <perceivePriority>1</perceivePriority>
-    <rainRate>1</rainRate>
-    <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
-    <commonalityRainfallFactor>
-      <points>
-        <li>(0, 0)</li>
-        <li>(300,0.5)</li>
-        <li>(1300, 1)</li>
-      </points>
-    </commonalityRainfallFactor>
-    <ambientSounds>
-      <li>Ambient_Wind_Storm</li>
-    </ambientSounds>
-    <overlayClasses>
-		<li>ReGrowthCore.WeatherOverlay_Sandstorm</li>
-    </overlayClasses>
-    <!-- Colors are Overcast -->
-    <skyColorsDay>
-      <sky>(0.8,0.8,0.8)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.7,0.7,0.7)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDay>
-    <skyColorsDusk>
-      <sky>(1,1,1)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.6,0.6,0.6)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsDusk>
-    <skyColorsNightEdge>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightEdge>
-    <skyColorsNightMid>
-      <sky>(0.35,0.40,0.45)</sky>
-      <shadow>(0.92,0.92,0.92)</shadow>
-      <overlay>(0.5,0.5,0.5)</overlay>
-      <saturation>0.9</saturation>
-    </skyColorsNightMid>
-  </WeatherDef>
+
+    <WeatherDef>
+        <defName>RG_Blizzard</defName>
+        <label>blizzard</label>
+        <description>Blizzard extremly reducesthe accuracy of ranged weapon and slows people down.</description>
+        <temperatureRange>-999~-0.5</temperatureRange>
+        <snowRate>2.0</snowRate>
+        <windSpeedFactor>2.0</windSpeedFactor>
+        <accuracyMultiplier>0.2</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>2</perceivePriority>
+        <rainRate>2.0</rainRate>
+        <moveSpeedMultiplier>0.2</moveSpeedMultiplier>
+		<commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 2.0)</li>
+			</points>
+		</commonalityRainfallFactor>  
+        <ambientSounds>
+            <li>RG_Ambient_Blizzard</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>ReGrowthCore.WeatherOverlay_Blizzard</li>
+        </overlayClasses>
+        <!-- Colors are Overcast -->
+        <skyColorsDay>
+            <sky>(0.8,0.8,0.8)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.7,0.7,0.7)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDay>
+        <skyColorsDusk>
+            <sky>(1,1,1)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.6,0.6,0.6)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsDusk>
+        <skyColorsNightEdge>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightEdge>
+        <skyColorsNightMid>
+            <sky>(0.35,0.40,0.45)</sky>
+            <shadow>(0.92,0.92,0.92)</shadow>
+            <overlay>(0.5,0.5,0.5)</overlay>
+            <saturation>0.9</saturation>
+        </skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>RG_Monsoon</defName>
+        <label>Monsoon</label>
+        <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+        <temperatureRange>0~999</temperatureRange>
+        <windSpeedFactor>1.0</windSpeedFactor>
+        <accuracyMultiplier>0.4</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>2</perceivePriority>
+        <exposedThought>RG_CompletelyWet</exposedThought>
+        <rainRate>2</rainRate>
+        <moveSpeedMultiplier>0.4</moveSpeedMultiplier>
+        <commonalityRainfallFactor>
+			<points>
+				<li>(0, 0)</li>
+				<li>(1300, 1)</li>
+				<li>(4000, 2.0)</li>
+			</points>
+        </commonalityRainfallFactor>
+		<ambientSounds>
+			<li>Ambient_Wind_Storm</li>
+			<li>Ambient_Rain</li>
+		</ambientSounds>
+        <overlayClasses>
+            <li>ReGrowthCore.WeatherOverlay_Monsoon</li>
+        </overlayClasses>
+        <!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.7,0.7,0.7)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.6,0.6,0.6)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.5,0.5,0.5)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+    </WeatherDef>
+
+    <WeatherDef>
+        <defName>RG_Sandstorm</defName>
+        <label>Sandstorm</label>
+        <description>Snow reduces the accuracy of ranged weapons, extinguishes fire, and slows people down.</description>
+        <temperatureRange>-999~999</temperatureRange>
+        <windSpeedFactor>1.5</windSpeedFactor>
+        <accuracyMultiplier>0.8</accuracyMultiplier>
+        <favorability>Bad</favorability>
+        <perceivePriority>1</perceivePriority>
+        <moveSpeedMultiplier>0.8</moveSpeedMultiplier>
+        <exposedThought>RG_Sandy</exposedThought>
+        <commonalityRainfallFactor>
+            <points>
+                <li>(0, 0)</li>
+                <li>(300,0.5)</li>
+                <li>(1300, 1)</li>
+            </points>
+        </commonalityRainfallFactor>
+        <ambientSounds>
+            <li>RG_Ambient_Sandstorm</li>
+        </ambientSounds>
+        <overlayClasses>
+            <li>ReGrowthCore.WeatherOverlay_Sandstorm</li>
+        </overlayClasses>
+        <!-- Colors are Overcast -->
+		<skyColorsDay>
+			<sky>(0.8,0.8,0.8)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.72,0.45,0.29)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDay>
+		<skyColorsDusk>
+			<sky>(1,1,1)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.72,0.45,0.29)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsDusk>
+		<skyColorsNightEdge>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.48,0.36,0.29)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightEdge>
+		<skyColorsNightMid>
+			<sky>(0.35,0.40,0.45)</sky>
+			<shadow>(0.92,0.92,0.92)</shadow>
+			<overlay>(0.46,0.39,0.35)</overlay>
+			<saturation>0.9</saturation>
+		</skyColorsNightMid>
+    </WeatherDef>
 
 </Defs>
