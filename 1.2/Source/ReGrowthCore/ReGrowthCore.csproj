@@ -41,7 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="WeatherOverlay_DrizzleRain.cs" />
+    <Compile Include="WeatherOverlays\WeatherOverlay_DrizzleRain - Copy.cs" />
+    <Compile Include="WeatherOverlays\WeatherOverlay_DrizzleRain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
