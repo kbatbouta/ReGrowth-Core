@@ -26,7 +26,7 @@
                             <Plant_Moss>4.0</Plant_Moss>
                             <Plant_Bush>1.2</Plant_Bush>
                             <Plant_TreeOak>0.2</Plant_TreeOak>
-                            <Plant_TreePoplar>0.2</Plant_TreePoplar>
+                            <Plant_TreeBirch>0.2</Plant_TreeBirch>
                             <Plant_Berry>0.15</Plant_Berry>
                             <Plant_TreePine>1.4</Plant_TreePine>
                             <Plant_HealrootWild>0.05</Plant_HealrootWild>
@@ -55,15 +55,15 @@
                     <xpath>/Defs/BiomeDef[defName = "Tundra"]/wildPlants</xpath>
                     <value>
                         <wildPlants>
-                            <Plant_Grass>3.6</Plant_Grass>
-                            <Plant_Moss>0.5</Plant_Moss>
-                            <Plant_Bush>0.3</Plant_Bush>
-                            <Plant_Brambles>1.0</Plant_Brambles>
-                            <Plant_Astragalus>0.1</Plant_Astragalus>
-                            <Plant_Dandelion>0.1</Plant_Dandelion>
+                            <Plant_Grass>20.0</Plant_Grass>
+                            <Plant_TallGrass>3.5</Plant_TallGrass>
+                            <Plant_Moss>6.5</Plant_Moss>
+                            <Plant_Bush>4.5</Plant_Bush>
+                            <Plant_Brambles>4.0</Plant_Brambles>
+                            <Plant_Dandelion>0.5</Plant_Dandelion>
                             <Plant_TreePine>0.08</Plant_TreePine>
                             <Plant_TreeBirch>0.08</Plant_TreeBirch>
-                            <Plant_Berry>0.07</Plant_Berry>
+                            <Plant_Berry>1.5</Plant_Berry>
                             <Plant_HealrootWild>0.05</Plant_HealrootWild>
                         </wildPlants>
                     </value>
