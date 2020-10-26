@@ -41,11 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HarmonyPatches\WeatherOverlay_Sandstorm - Copy.cs" />
-    <Compile Include="Comps\WeatherOverlay_Sandstorm.cs" />
+    <Compile Include="HarmonyPatches\GetFallColorFactor_Patch.cs" />
+    <Compile Include="Comps\CompTreeLeavesSpawner.cs" />
+    <Compile Include="ReGrowthMod.cs" />
+    <Compile Include="ReGrowthSettings.cs" />
+    <Compile Include="HarmonyPatches\CleanFilthPrefixPatch.cs" />
+    <Compile Include="HarmonyPatches\DoCellSteadyEffects.cs" />
+    <Compile Include="HarmonyPatches\TickOverlay.cs" />
+    <Compile Include="HarmonyPatches\TryPickupFilth.cs" />
     <Compile Include="WeatherOverlays\WeatherOverlay_Blizzard.cs" />
+    <Compile Include="RGDefOf.cs" />
     <Compile Include="WeatherOverlays\WeatherOverlay_Overcast.cs" />
-    <Compile Include="WeatherOverlays\WeatherOverlay_Sandstorm.cs" />
     <Compile Include="WeatherOverlays\WeatherOverlay_Monsoon.cs" />
     <Compile Include="WeatherOverlays\WeatherOverlay_DrizzleRain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
