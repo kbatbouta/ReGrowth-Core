@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RG.SpawnLeaves>Spawn leaves</RG.SpawnLeaves>
+	<RG.ColdFog>Cold fog</RG.ColdFog>
+	<RG.IceLayer>Ice layer</RG.IceLayer>
+	<RG.RainWaterPuddles>Rain water puddles</RG.RainWaterPuddles>
+	<RG.RainCleanWaterPuddles>Clean water puddles</RG.RainCleanWaterPuddles>
+    <RG.FogVelocity>Fog velocity</RG.FogVelocity>
+    <RG.FogTemp>Fog temperature</RG.FogTemp>
+    <RG.PuddleChance>Puddle spawn chance</RG.PuddleChance>
+</LanguageData>
