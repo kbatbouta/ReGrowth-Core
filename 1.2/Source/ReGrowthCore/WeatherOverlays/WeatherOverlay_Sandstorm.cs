@@ -19,10 +19,10 @@ namespace ReGrowthCore
 			if (worldOverlayMat == null)
 			{
 				worldOverlayMat = MaterialPool.MatFrom("Weather/SandstormWorldOverlay");
-				worldOverlayMat.CopyPropertiesFromMaterial(MatLoader.LoadMat("Weather/FogOverlayWorld"));
-				worldOverlayMat.shader = MatLoader.LoadMat("Weather/FogOverlayWorld").shader;
-				worldOverlayMat.SetTexture("_MainTex", ContentFinder<Texture2D>.Get("Weather/SandstormWorldOverlay"));
-				worldOverlayMat.SetTexture("_MainTex2", ContentFinder<Texture2D>.Get("Weather/SandstormWorldOverlay"));
+				//worldOverlayMat.CopyPropertiesFromMaterial(MatLoader.LoadMat("Weather/FogOverlayWorld"));
+				//worldOverlayMat.shader = MatLoader.LoadMat("Weather/FogOverlayWorld").shader;
+				//worldOverlayMat.SetTexture("_MainTex", ContentFinder<Texture2D>.Get("Weather/SandstormWorldOverlay"));
+				//worldOverlayMat.SetTexture("_MainTex2", ContentFinder<Texture2D>.Get("Weather/SandstormWorldOverlay"));
 				//this.worldOverlayMat.SetColor("_TuningColor", new Color(1, 1, 1, 1)); //0.2720588f, 0.2720588f, 0.2720588f, 0.05882353f));
 			}
 			base.TickOverlay(map);

@@ -4,3 +4,4 @@ c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthC
 c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.csproj.CoreCompileInputs.cache
 c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.dll
 c:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\ReGrowthCore\obj\Debug\ReGrowthCore.pdb
+C:\GAMES\Rimworld\Mods\ReGrowth-Core\1.2\Source\RegrowthCore\obj\Debug\ReGrowthCore.csproj.CopyComplete
