@@ -16,8 +16,38 @@
 								<compClass>ReGrowthCore.CompTreeLeavesSpawner</compClass>
                                 <thingToSpawn>RG_Filth_LeavesTreeOak</thingToSpawn>
                                 <spawnCount>1</spawnCount>
-                                <spawnIntervalRange>3000~6000</spawnIntervalRange>
-                                <spawnMaxAdjacent>8</spawnMaxAdjacent>
+                                <spawnIntervalRange>3000~8000</spawnIntervalRange>
+                                <spawnMaxAdjacent>3</spawnMaxAdjacent>
+                                <saveKeysPrefix>leaves</saveKeysPrefix>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Plant_TreePoplar"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Spawner">
+								<compClass>ReGrowthCore.CompTreeLeavesSpawner</compClass>
+                                <thingToSpawn>RG_Filth_LeavesTreePopolar</thingToSpawn>
+                                <spawnCount>1</spawnCount>
+                                <spawnIntervalRange>3000~8000</spawnIntervalRange>
+                                <spawnMaxAdjacent>3</spawnMaxAdjacent>
+                                <saveKeysPrefix>leaves</saveKeysPrefix>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName = "Plant_TreeBirch"]</xpath>
+                    <value>
+                        <comps>
+                            <li Class="CompProperties_Spawner">
+								<compClass>ReGrowthCore.CompTreeLeavesSpawner</compClass>
+                                <thingToSpawn>RG_Filth_LeavesTreeBirch</thingToSpawn>
+                                <spawnCount>1</spawnCount>
+                                <spawnIntervalRange>3000~8000</spawnIntervalRange>
+                                <spawnMaxAdjacent>3</spawnMaxAdjacent>
                                 <saveKeysPrefix>leaves</saveKeysPrefix>
                             </li>
                         </comps>
