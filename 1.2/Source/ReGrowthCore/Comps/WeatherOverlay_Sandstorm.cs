@@ -61,10 +61,9 @@ namespace ReGrowthCore
 
 		private void CheckShouldSpawn()
 		{
-			Log.Message("GetFallColorFactor.fallColorFactor: " + GetFallColorFactor.fallColorFactor);
 			if (this.parent is Plant tree && !tree.LeaflessNow)
             {
-				if (ticksUntilSpawn <= 0 && GetFallColorFactor.fallColorFactor > 0.2f)
+				if (ticksUntilSpawn <= 0 && GetFallColorFactor.fallColorFactor > 0.48f)
 				{
 					Log.Message(tree + " spawns leaves");
 					TryDoSpawn();
