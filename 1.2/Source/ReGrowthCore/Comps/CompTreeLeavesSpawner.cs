@@ -36,7 +36,7 @@ namespace ReGrowthCore
 
 		private void TickInterval(int interval)
 		{
-			if (!parent.Spawned)// || !ReGrowthSettings.SpawnLeaves)
+			if (!parent.Spawned && !ReGrowthSettings.SpawnLeaves)
 			{
 				return;
 			}
