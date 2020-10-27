@@ -65,7 +65,6 @@ namespace ReGrowthCore
             {
 				if (ticksUntilSpawn <= 0 && GetFallColorFactor.fallColorFactor > 0.48f)
 				{
-					Log.Message(tree + " spawns leaves");
 					TryDoSpawn();
 					ResetCountdown();
 				}
