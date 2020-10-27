@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <!--=================== Visual - Heat ==================-->
+
+<!--
   <ThingDef ParentName="MoteBase">
     <defName>RG_Mote_FrostGlow</defName>
     <graphicData>
@@ -26,4 +27,5 @@
     </graphicData>
     <altitudeLayer>FloorEmplacement</altitudeLayer>
   </ThingDef>
+  -->
 </Defs>

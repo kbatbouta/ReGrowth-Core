@@ -39,7 +39,7 @@
 			<rainWashes>false</rainWashes>
 		</filth>
 	</ThingDef>
-
+<!--
 	<ThingDef ParentName="BaseFilth">
 		<defName>RG_Filth_Water</defName>
 		<label>water</label>
@@ -86,5 +86,5 @@
 			<allowsFire>false</allowsFire>
 		</filth>
 	</ThingDef>
-
+-->
 </Defs>
