@@ -7,7 +7,8 @@
         <texturePath>Terrain/Surfaces/HotSpring</texturePath>
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <renderPrecedence>394</renderPrecedence>
-        <driesTo>Gravel</driesTo>
+        <driesTo>RG_HotSpringSand</driesTo>
+		<traversedThought>RG_HotSpringWet</traversedThought>
     </TerrainDef>
 
     <TerrainDef ParentName="WaterDeepBase">

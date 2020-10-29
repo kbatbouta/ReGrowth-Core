@@ -39,5 +39,18 @@
             </li>
         </stages>
     </ThoughtDef>
+	
+    <ThoughtDef>
+        <defName>RG_HotSpringWet</defName>
+        <durationDays>0.5</durationDays>
+        <stackLimit>1</stackLimit>
+        <stages>
+            <li>
+                <label>warm water</label>
+                <description>The water from that hot spring felt amazing!</description>
+                <baseMoodEffect>+3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 
 </Defs>

@@ -25,7 +25,7 @@
         <takeFootprints>True</takeFootprints>
         <tools>
             <li>
-                <label>gravel</label>
+                <label>lava rock</label>
                 <capacities>
                     <li>KickMaterialInEyes</li>
                 </capacities>
