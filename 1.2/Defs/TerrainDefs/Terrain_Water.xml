@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <TerrainDef ParentName="WaterShallowBase">
+        <defName>RG_HotSpring</defName>
+        <label>hot spring</label>
+        <texturePath>Terrain/Surfaces/HotSpring</texturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>394</renderPrecedence>
+        <driesTo>Gravel</driesTo>
+    </TerrainDef>
+
+</Defs>
