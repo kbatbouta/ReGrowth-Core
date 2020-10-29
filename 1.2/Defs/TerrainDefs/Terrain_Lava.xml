@@ -39,7 +39,11 @@
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_HeatPush">
 				<pushAmount>10</pushAmount>
-				<targetTemp>500</targetTemp>
+				<targetTemp>80</targetTemp>
+			</li>
+			<li Class="ReGrowthCore.TerrainCompProperties_Glower">
+                <glowRadius>2</glowRadius>
+                <glowColor>(178,58,0,0)</glowColor>
 			</li>
 		</terrainComps>
     </ReGrowthCore.ActiveTerrainDef>
