@@ -4,8 +4,8 @@
     <ReGrowthCore.ActiveTerrainDef Abstract="True" Name="RG_LavaBase">
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <waterDepthShaderParameters>
-            <_WaterRippleDensity>0.2</_WaterRippleDensity>
-            <_WaterDepthIntensity>0.2</_WaterDepthIntensity>
+            <_WaterRippleIntensity>2</_WaterRippleIntensity>
+            <_WaterDepthIntensity>1.621</_WaterDepthIntensity>
         </waterDepthShaderParameters>
         <edgeType>Water</edgeType>
         <avoidWander>true</avoidWander>
@@ -24,6 +24,11 @@
         <tags>
             <li>Lava</li>
         </tags>
+        <modExtensions>
+            <li Class="ReGrowthCore.DefExtension_ShaderSpeedMult">
+                <timeMult>0.0051</timeMult>
+            </li>
+        </modExtensions>
     </ReGrowthCore.ActiveTerrainDef>
 
     <ReGrowthCore.ActiveTerrainDef ParentName="RG_LavaBase">
