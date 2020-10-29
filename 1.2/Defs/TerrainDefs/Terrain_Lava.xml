@@ -4,8 +4,8 @@
     <ReGrowthCore.ActiveTerrainDef Abstract="True" Name="RG_LavaBase">
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <waterDepthShaderParameters>
-            <_WaterRippleDensity>0.2</_WaterRippleDensity>
-            <_WaterDepthIntensity>0.2</_WaterDepthIntensity>
+            <_WaterRippleDensity>2</_WaterRippleDensity>
+            <_WaterDepthIntensity>1.6</_WaterDepthIntensity>
         </waterDepthShaderParameters>
         <edgeType>Water</edgeType>
         <avoidWander>true</avoidWander>
