@@ -38,8 +38,8 @@
         </statBases>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_HeatPush">
-				<pushAmount>50</pushAmount>
-				<targetTemp>5000</targetTemp>
+				<pushAmount>10</pushAmount>
+				<targetTemp>500</targetTemp>
 			</li>
 		</terrainComps>
     </ReGrowthCore.ActiveTerrainDef>
