@@ -12,19 +12,19 @@ namespace ReGrowthCore
     {
         public static bool SpawnLeaves = true;
 
-        //public static bool ColdFog = true;
-        //
-        //public static bool IceLayer = true;
-        //
-        //public static bool RainWaterPuddles = true;
-        //
-        //public static bool RainCleanWaterPuddles = false;
-        //
-        //public static int FogVelocity = 12;
-        //
-        //public static int FogTemp = 0;
-        //
-        //public static int PuddleChance = 20;
+        public static bool ColdFog = true;
+        
+        public static bool IceLayer = true;
+        
+        public static bool RainWaterPuddles = true;
+        
+        public static bool RainCleanWaterPuddles = false;
+        
+        public static int FogVelocity = 12;
+        
+        public static int FogTemp = 0;
+        
+        public static int PuddleChance = 20;
 
 
         public override void ExposeData()
