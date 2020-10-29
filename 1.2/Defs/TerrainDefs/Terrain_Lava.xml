@@ -5,7 +5,7 @@
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <waterDepthShaderParameters>
             <_WaterRippleIntensity>2</_WaterRippleIntensity>
-            <_WaterDepthIntensity>1.621</_WaterDepthIntensity>
+            <_WaterDepthIntensity>1.62</_WaterDepthIntensity>
         </waterDepthShaderParameters>
         <edgeType>Water</edgeType>
         <avoidWander>true</avoidWander>
