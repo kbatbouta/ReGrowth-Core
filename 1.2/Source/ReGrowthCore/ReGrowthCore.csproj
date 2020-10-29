@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameConditions\GameCondition_NoSunlightDark.cs" />
     <Compile Include="HarmonyPatches\GetFallColorFactor_Patch.cs" />
     <Compile Include="Comps\CompTreeLeavesSpawner.cs" />
+    <Compile Include="ReGrowthUtils.cs" />
     <Compile Include="ReGrowthMod.cs" />
     <Compile Include="ReGrowthSettings.cs" />
     <Compile Include="WeatherOverlays\WeatherOverlay_Blizzard.cs" />
