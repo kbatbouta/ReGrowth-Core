@@ -10,4 +10,12 @@
         <driesTo>Gravel</driesTo>
     </TerrainDef>
 
+    <TerrainDef ParentName="WaterDeepBase">
+        <defName>RG_HotSpringDeep</defName>
+        <label>deep hot spring</label>
+        <texturePath>Terrain/Surfaces/HotSpringDeep</texturePath>
+        <waterDepthShader>Map/WaterDepth</waterDepthShader>
+        <renderPrecedence>395</renderPrecedence>
+    </TerrainDef>
+
 </Defs>
