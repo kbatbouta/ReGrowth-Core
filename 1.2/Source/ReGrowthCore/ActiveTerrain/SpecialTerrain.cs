@@ -7,7 +7,7 @@ using System.Reflection;
 using System.Text;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     public class ActiveTerrainDef : TerrainDef
     {

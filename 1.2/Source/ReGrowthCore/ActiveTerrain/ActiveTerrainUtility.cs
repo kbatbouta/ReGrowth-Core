@@ -4,7 +4,7 @@ using System;
 using UnityEngine;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     /// <summary>
     /// Just a reference class for comp signals.

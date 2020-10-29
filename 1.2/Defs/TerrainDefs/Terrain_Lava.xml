@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <TerrainDef Abstract="True" Name="RG_LavaBase">
+    <ReGrowthCore.ActiveTerrainDef Abstract="True" Name="RG_LavaBase">
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <waterDepthShaderParameters>
             <_WaterRippleDensity>0.2</_WaterRippleDensity>
@@ -24,18 +24,24 @@
         <tags>
             <li>Lava</li>
         </tags>
-    </TerrainDef>
+    </ReGrowthCore.ActiveTerrainDef>
 
-    <TerrainDef ParentName="RG_LavaBase">
+    <ReGrowthCore.ActiveTerrainDef ParentName="RG_LavaBase">
         <defName>RG_Lava</defName>
         <texturePath>Terrain/Surfaces/Lava</texturePath>
         <label>lava</label>
         <renderPrecedence>395</renderPrecedence>
+		<tickerType>Normal</tickerType>
         <statBases>
             <Beauty>-3</Beauty>
             <Cleanliness>-4</Cleanliness>
         </statBases>
-
-    </TerrainDef>
+		<terrainComps>
+			<li Class="ReGrowthCore.TerrainCompProperties_HeatPush">
+				<pushAmount>50</pushAmount>
+				<targetTemp>5000</targetTemp>
+			</li>
+		</terrainComps>
+    </ReGrowthCore.ActiveTerrainDef>
 
 </Defs>

@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     /// <summary>
     /// Terrain comp that controls and maintains temperature.

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     public class SpecialTerrainList : MapComponent
     {

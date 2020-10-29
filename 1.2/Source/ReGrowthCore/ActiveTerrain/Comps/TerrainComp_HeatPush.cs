@@ -6,7 +6,7 @@ using System.Text;
 using UnityEngine;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     /// <summary>
     /// This terrain comp will push heat endlessly with no regard for ambient temperature.

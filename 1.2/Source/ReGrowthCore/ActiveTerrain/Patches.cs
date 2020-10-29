@@ -1,7 +1,7 @@
 ﻿using HarmonyLib;
 using Verse;
 
-namespace VFECore
+namespace ReGrowthCore
 {
     [HarmonyPatch(typeof(TerrainGrid), "SetTerrain")]
     public static class _TerrainGrid
