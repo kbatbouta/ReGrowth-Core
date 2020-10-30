@@ -9,17 +9,17 @@
         <renderPrecedence>394</renderPrecedence>
         <driesTo>RG_HotSpringSand</driesTo>
 		<traversedThought>RG_HotSpringWet</traversedThought>
-		<tickerType>Normal</tickerType>
+		<tickerType>Long</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
 				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>60~100</tickInterval>
-				<size>2~6</size>
-				<rotationRate>-60~60</rotationRate>
-				<velocityAngle>0~360</velocityAngle>
-				<velocitySpeed>0.6~0.75</velocitySpeed>
+				<tickInterval>1~4</tickInterval>
+				<size>2~4</size>
+				<rotationRate>0</rotationRate>
+				<velocityAngle>0~180</velocityAngle>
+				<velocitySpeed>0.05~0.1</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~-15</reqTempRangeToSpawn>
+				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>
@@ -31,17 +31,17 @@
         <texturePath>Terrain/Surfaces/HotSpringDeep</texturePath>
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <renderPrecedence>395</renderPrecedence>
-		<tickerType>Normal</tickerType>
+		<tickerType>Long</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
 				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>60~100</tickInterval>
-				<size>2~6</size>
-				<rotationRate>-60~60</rotationRate>
-				<velocityAngle>0~360</velocityAngle>
-				<velocitySpeed>0.6~0.75</velocitySpeed>
+				<tickInterval>1~4</tickInterval>
+				<size>2~4</size>
+				<rotationRate>0</rotationRate>
+				<velocityAngle>0~180</velocityAngle>
+				<velocitySpeed>0.05~0.1</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~-15</reqTempRangeToSpawn>
+				<reqTempRangeToSpawn>-200~15</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>

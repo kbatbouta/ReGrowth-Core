@@ -9,9 +9,9 @@
         </graphicData>
         <altitudeLayer>MoteOverhead</altitudeLayer>
         <mote>
-            <fadeInTime>1.25</fadeInTime>
-            <solidTime>5</solidTime>
-            <fadeOutTime>1.25</fadeOutTime>
+            <fadeInTime>1.50</fadeInTime>
+            <solidTime>30</solidTime>
+            <fadeOutTime>1.50</fadeOutTime>
         </mote>
     </ThingDef>
 
