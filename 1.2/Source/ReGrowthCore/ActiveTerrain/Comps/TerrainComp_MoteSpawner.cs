@@ -28,6 +28,7 @@ namespace ReGrowthCore
         public FloatRange reqTempRangeToSpawn;
         public List<IntRange> reqTimeRangeToSpawn;
         public bool enableSettingsSpawnFogOnHotSprings;
+        public float spawnChance;
     }
     public class TerrainComp_MoteSpawner : TerrainComp
     {
@@ -56,10 +57,10 @@ namespace ReGrowthCore
         public override void CompTick()
         {
             base.CompTick();
+            if (Props.spawnChance > 0f && !Rand.Chance(Props.spawnChance)) return;
             if (Props.enableSettingsSpawnFogOnHotSprings && !ReGrowthSettings.SpawnFogOnHotSprings) return;
             if (Props.reqTempRangeToSpawn != null && !Props.reqTempRangeToSpawn.Includes(this.parent.Position.GetTemperature(this.parent.Map))) return;
             if (!CanSpawnInRequiredTimeRanges()) return;
-
             if (Find.TickManager.TicksGame % Props.tickInterval.RandomInRange == 0)
             {
                 if (Props.size.min > 0f)

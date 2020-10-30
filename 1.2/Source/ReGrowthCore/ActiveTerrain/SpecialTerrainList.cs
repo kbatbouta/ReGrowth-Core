@@ -34,9 +34,12 @@ namespace ReGrowthCore
 
             foreach (TerrainDef terrainDef in this.terrainDefs)
             {
-                foreach (DefModExtension extension in terrainDef.modExtensions)
-                    if (extension is DefExtensionActive act)
-                        act.DoWork(terrainDef);
+                if (terrainDef.modExtensions != null)
+                {
+                    foreach (DefModExtension extension in terrainDef.modExtensions)
+                        if (extension is DefExtensionActive act)
+                            act.DoWork(terrainDef);
+                }
             }
         }
 
