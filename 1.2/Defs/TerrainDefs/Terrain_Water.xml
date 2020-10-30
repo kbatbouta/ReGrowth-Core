@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <TerrainDef ParentName="WaterShallowBase">
+    <ReGrowthCore.ActiveTerrainDef ParentName="WaterShallowBase">
         <defName>RG_HotSpring</defName>
         <label>hot spring</label>
         <texturePath>Terrain/Surfaces/HotSpring</texturePath>
@@ -9,14 +9,48 @@
         <renderPrecedence>394</renderPrecedence>
         <driesTo>RG_HotSpringSand</driesTo>
 		<traversedThought>RG_HotSpringWet</traversedThought>
-    </TerrainDef>
+		<tickerType>Normal</tickerType>
+		<terrainComps>
+			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
+				<moteDef>Mote_AirPuff</moteDef>
+				<tickInterval>60~100</tickInterval>
+				<size>2~6</size>
+				<rotationRate>-60~60</rotationRate>
+				<velocityAngle>0~360</velocityAngle>
+				<velocitySpeed>0.6~0.75</velocitySpeed>
+				<instanceColor>(0.75,0.75,0.75)</instanceColor>
+				<reqTempRangeToSpawn>-200~100</reqTempRangeToSpawn>
+				<reqTimeRangeToSpawn>
+					<li>5~10</li>
+					<li>19~22</li>
+				</reqTimeRangeToSpawn>
+			</li>
+		</terrainComps>
+    </ReGrowthCore.ActiveTerrainDef>
 
-    <TerrainDef ParentName="WaterDeepBase">
+    <ReGrowthCore.ActiveTerrainDef ParentName="WaterDeepBase">
         <defName>RG_HotSpringDeep</defName>
         <label>deep hot spring</label>
         <texturePath>Terrain/Surfaces/HotSpringDeep</texturePath>
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <renderPrecedence>395</renderPrecedence>
-    </TerrainDef>
+		<tickerType>Normal</tickerType>
+		<terrainComps>
+			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
+				<moteDef>Mote_AirPuff</moteDef>
+				<tickInterval>60~100</tickInterval>
+				<size>2~6</size>
+				<rotationRate>-60~60</rotationRate>
+				<velocityAngle>0~360</velocityAngle>
+				<velocitySpeed>0.6~0.75</velocitySpeed>
+				<instanceColor>(0.75,0.75,0.75)</instanceColor>
+				<reqTempRangeToSpawn>-200~100</reqTempRangeToSpawn>
+				<reqTimeRangeToSpawn>
+					<li>5~10</li>
+					<li>19~22</li>
+				</reqTimeRangeToSpawn>
+			</li>
+		</terrainComps>
+    </ReGrowthCore.ActiveTerrainDef>
 
 </Defs>
