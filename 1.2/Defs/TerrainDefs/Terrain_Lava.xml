@@ -26,7 +26,7 @@
         </tags>
         <modExtensions>
             <li Class="ReGrowthCore.DefExtension_ShaderSpeedMult">
-                <timeMult>0.0051</timeMult>
+                <timeMult>0.0011</timeMult>
             </li>
         </modExtensions>
     </ReGrowthCore.ActiveTerrainDef>
@@ -47,7 +47,7 @@
 				<targetTemp>80</targetTemp>
 			</li>
 			<li Class="ReGrowthCore.TerrainCompProperties_Glower">
-                <glowRadius>2</glowRadius>
+                <glowRadius>4</glowRadius>
                 <glowColor>(178,58,0,0)</glowColor>
 			</li>
 		</terrainComps>
