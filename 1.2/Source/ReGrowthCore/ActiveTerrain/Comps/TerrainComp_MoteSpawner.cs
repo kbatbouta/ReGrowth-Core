@@ -27,6 +27,7 @@ namespace ReGrowthCore
         public Color instanceColor;
         public FloatRange reqTempRangeToSpawn;
         public List<IntRange> reqTimeRangeToSpawn;
+        public bool enableSettingsSpawnFogOnHotSprings;
     }
     public class TerrainComp_MoteSpawner : TerrainComp
     {
@@ -39,44 +40,34 @@ namespace ReGrowthCore
             {
                 foreach (var reqTime in Props.reqTimeRangeToSpawn)
                 {
-                    Log.Message(reqTime.min + " - " + reqTime.max + " - " + curTime);
-                    Log.Message((curTime >= reqTime.min).ToString());
-                    Log.Message((curTime <= reqTime.max).ToString());
                     if (curTime >= reqTime.min && curTime <= reqTime.max)
                     {
-                        Log.Message(" - CanSpawnInRequiredTimeRanges - return true; - 6", true);
                         return true;
                     }
                 }
             }
             else
             {
-                Log.Message(" - CanSpawnInRequiredTimeRanges - return true; - 7", true);
                 return true;
             }
-            Log.Message(" - CanSpawnInRequiredTimeRanges - return false; - 7", true);
             return false;
         }
 
         public override void CompTick()
         {
             base.CompTick();
-            Log.Message(" - CompTest - if (Props.reqTempRangeToSpawn != null && !Props.reqTempRangeToSpawn.Includes(this.parent.Position.GetTemperature(this.parent.Map))) return; - 2", true);
+            if (Props.enableSettingsSpawnFogOnHotSprings && !ReGrowthSettings.SpawnFogOnHotSprings) return;
             if (Props.reqTempRangeToSpawn != null && !Props.reqTempRangeToSpawn.Includes(this.parent.Position.GetTemperature(this.parent.Map))) return;
-            Log.Message(" - CompTest - if (!CanSpawnInRequiredTimeRanges()) return; - 3", true);
             if (!CanSpawnInRequiredTimeRanges()) return;
 
             if (Find.TickManager.TicksGame % Props.tickInterval.RandomInRange == 0)
             {
-                Log.Message(" - CompTest - if (Props.size.min > 0f) - 5", true);
                 if (Props.size.min > 0f)
                 {
-                    Log.Message(" - CompTest - ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, Props.size.RandomInRange); - 6", true);
                     ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, Props.size.RandomInRange);
                 }
                 else
                 {
-                    Log.Message(" - CompTest - ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, 1f); - 7", true);
                     ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, 1f);
                 }
             }

@@ -12,6 +12,8 @@ namespace ReGrowthCore
     {
         public static bool SpawnLeaves = true;
 
+        public static bool SpawnFogOnHotSprings = true;
+
         public static bool ColdFog = true;
         
         public static bool IceLayer = true;
@@ -31,6 +33,7 @@ namespace ReGrowthCore
         {
             base.ExposeData();
             Scribe_Values.Look(ref SpawnLeaves, "SpawnLeaves", true);
+            Scribe_Values.Look(ref SpawnFogOnHotSprings, "SpawnFogOnHotSprings", true);
             //Scribe_Values.Look(ref ColdFog, "ColdFog", true);
             //Scribe_Values.Look(ref IceLayer, "IceLayer", true);
             //Scribe_Values.Look(ref RainWaterPuddles, "RainWaterPuddles", true);
@@ -47,6 +50,7 @@ namespace ReGrowthCore
             Listing_Standard listingStandard = new Listing_Standard();
             listingStandard.Begin(inRect);
             listingStandard.CheckboxLabeled("RG.SpawnLeaves".Translate(), ref SpawnLeaves);
+            listingStandard.CheckboxLabeled("RG.SpawnFogOnHotSprings".Translate(), ref SpawnFogOnHotSprings);
             //listingStandard.CheckboxLabeled("RG.ColdFog".Translate(), ref ColdFog);
             //listingStandard.CheckboxLabeled("RG.IceLayer".Translate(), ref IceLayer);
             //listingStandard.CheckboxLabeled("RG.RainWaterPuddles".Translate(), ref RainWaterPuddles);

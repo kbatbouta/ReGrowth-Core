@@ -24,6 +24,7 @@
 					<li>5~10</li>
 					<li>19~22</li>
 				</reqTimeRangeToSpawn>
+				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>
     </ReGrowthCore.ActiveTerrainDef>
@@ -49,6 +50,7 @@
 					<li>5~10</li>
 					<li>19~22</li>
 				</reqTimeRangeToSpawn>
+				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>
     </ReGrowthCore.ActiveTerrainDef>
