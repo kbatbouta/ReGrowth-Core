@@ -12,11 +12,13 @@ namespace ReGrowthCore
         public SpecialTerrainList(Map map) : base(map) { }
         
         public Dictionary<IntVec3, TerrainInstance> terrains = new Dictionary<IntVec3, TerrainInstance>();
+        public HashSet<TerrainDef> terrainDefs = new HashSet<TerrainDef>();
 
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Collections.Look(ref terrains, "terrains", LookMode.Value, LookMode.Deep);
+            this.terrainDefs = new HashSet<TerrainDef>(this.terrains.Select(t => t.Value.def).Distinct());
         }
 
         /// <summary>
@@ -28,6 +30,13 @@ namespace ReGrowthCore
             foreach (var terr in terrains)
             {
                 terr.Value.Update();
+            }
+
+            foreach (TerrainDef terrainDef in this.terrainDefs)
+            {
+                foreach (DefModExtension extension in terrainDef.modExtensions)
+                    if (extension is DefExtensionActive act)
+                        act.DoWork(terrainDef);
             }
         }
 
@@ -96,6 +105,7 @@ namespace ReGrowthCore
                 var newTerr = special.MakeTerrainInstance(map, cell);
                 newTerr.Init();
                 terrains.Add(cell, newTerr);
+                this.terrainDefs.Add(special);
             }
         }
         
