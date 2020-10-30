@@ -9,11 +9,11 @@
         <renderPrecedence>394</renderPrecedence>
         <driesTo>RG_HotSpringSand</driesTo>
 		<traversedThought>RG_HotSpringWet</traversedThought>
-		<tickerType>Long</tickerType>
+		<tickerType>Normal</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
-				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>1~4</tickInterval>
+				<moteDef>Mote_AirPuff</moteDef>
+				<tickInterval>200~400</tickInterval>
 				<size>2~4</size>
 				<rotationRate>0</rotationRate>
 				<velocityAngle>0~180</velocityAngle>
@@ -32,11 +32,11 @@
         <texturePath>Terrain/Surfaces/HotSpringDeep</texturePath>
         <waterDepthShader>Map/WaterDepth</waterDepthShader>
         <renderPrecedence>395</renderPrecedence>
-		<tickerType>Long</tickerType>
+		<tickerType>Normal</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
-				<moteDef>RG_Mote_WaterFog</moteDef>
-				<tickInterval>1~4</tickInterval>
+				<moteDef>Mote_AirPuff</moteDef>
+				<tickInterval>200~400</tickInterval>
 				<size>2~4</size>
 				<rotationRate>0</rotationRate>
 				<velocityAngle>0~180</velocityAngle>

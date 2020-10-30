@@ -32,6 +32,11 @@ namespace ReGrowthCore
     }
     public class TerrainComp_MoteSpawner : TerrainComp
     {
+        public bool spawnAfterLoad = true;
+        public override void PostPostLoad()
+        {
+            base.PostPostLoad();
+        }
         public TerrainCompProperties_MoteSpawner Props { get { return (TerrainCompProperties_MoteSpawner)props; } }
 
         public bool CanSpawnInRequiredTimeRanges()
@@ -57,21 +62,20 @@ namespace ReGrowthCore
         public override void CompTick()
         {
             base.CompTick();
-            if (Props.spawnChance > 0f && !Rand.Chance(Props.spawnChance)) return;
+            if (Find.TickManager.TicksGame % Props.tickInterval.RandomInRange != 0) return;
             if (Props.enableSettingsSpawnFogOnHotSprings && !ReGrowthSettings.SpawnFogOnHotSprings) return;
+            if (Props.spawnChance > 0f && !Rand.Chance(Props.spawnChance)) return;
             if (Props.reqTempRangeToSpawn != null && !Props.reqTempRangeToSpawn.Includes(this.parent.Position.GetTemperature(this.parent.Map))) return;
             if (!CanSpawnInRequiredTimeRanges()) return;
-            if (Find.TickManager.TicksGame % Props.tickInterval.RandomInRange == 0)
+            if (Props.size.min > 0f)
             {
-                if (Props.size.min > 0f)
-                {
-                    ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, Props.size.RandomInRange);
-                }
-                else
-                {
-                    ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, 1f);
-                }
+                ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, Props.size.RandomInRange);
             }
+            else
+            {
+                ThrowMote(this.parent.Position.ToVector3Shifted(), this.parent.Map, 1f);
+            }
+            spawnAfterLoad = false;
         }
 
         public void ThrowMote(Vector3 loc, Map map, float size)
