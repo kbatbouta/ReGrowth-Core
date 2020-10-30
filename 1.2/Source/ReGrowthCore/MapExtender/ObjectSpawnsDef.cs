@@ -4,7 +4,7 @@ using RimWorld;
 using UnityEngine;
 using Verse;
 
-// Copyright Sarg - Alpha Biomes 2020
+// Copyright Sarg - Alpha Biomes 2020 & Taranchuck
 
 namespace ReGrowthCore
 {
