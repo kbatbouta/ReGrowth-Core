@@ -8,7 +8,7 @@ using Verse;
 
 namespace ReGrowthCore
 {
-    public class RGW_Wasteland_ObjectSpawnsDef : Def
+    public class ObjectSpawnsDef : Def
     {
         public ThingDef thingDef;
         public bool allowOnWater;

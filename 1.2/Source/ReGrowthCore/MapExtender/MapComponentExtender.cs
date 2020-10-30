@@ -11,12 +11,12 @@ using RimWorld.Planet;
 
 namespace ReGrowthCore
 {
-    public class RGW_Wasteland_MapComponentExtender : MapComponent
+    public class MapComponentExtender : MapComponent
     {
         public bool verifyFirstTime = true;
         public int spawnCounter = 0;
 
-        public RGW_Wasteland_MapComponentExtender(Map map) : base(map)
+        public MapComponentExtender(Map map) : base(map)
         {
 
         }
@@ -29,16 +29,14 @@ namespace ReGrowthCore
 
         public override void FinalizeInit()
         {
-
             base.FinalizeInit();
-
             if (verifyFirstTime)
             {
-                this.doMapSpawns();
+                this.DoMapSpawns();
             }
         }
 
-        public bool CanSpawnAt(IntVec3 c, RGW_Wasteland_ObjectSpawnsDef element)
+        public bool CanSpawnAt(IntVec3 c, ObjectSpawnsDef element)
         {
             if (!element.allowOnChunks)
             {
@@ -94,59 +92,54 @@ namespace ReGrowthCore
 
             return true;
         }
-        public void doMapSpawns()
+        public void DoMapSpawns()
         {
-
-            if (map.Biome.defName.Contains("RG-W"))
+            foreach (ObjectSpawnsDef element in DefDatabase<ObjectSpawnsDef>.AllDefs.Where(element => element.allowedBiome == map.Biome.defName))
             {
-                foreach (RGW_Wasteland_ObjectSpawnsDef element in DefDatabase<RGW_Wasteland_ObjectSpawnsDef>.AllDefs.Where(element => element.allowedBiome == map.Biome.defName))
+                IEnumerable<IntVec3> tmpTerrain = map.AllCells.InRandomOrder();
+                int extraGeneration = 0;
+                foreach (string biome in element.biomesWithExtraGeneration)
                 {
-                    IEnumerable<IntVec3> tmpTerrain = map.AllCells.InRandomOrder();
-
-                    int extraGeneration = 0;
-                    foreach (string biome in element.biomesWithExtraGeneration)
+                    if (map.Biome.defName == biome)
                     {
-                        if (map.Biome.defName == biome)
-                        {
-                            extraGeneration = element.extraGeneration;
-                        }
+                        extraGeneration = element.extraGeneration;
                     }
+                }
 
-                    if (spawnCounter == 0)
+                if (spawnCounter == 0)
+                {
+                    spawnCounter = Rand.RangeInclusive(element.numberToSpawn.min, element.numberToSpawn.max) + extraGeneration;
+                }
+                foreach (IntVec3 c in tmpTerrain)
+                {
+                    bool canSpawn = CanSpawnAt(c, element);
+                    if (canSpawn)
                     {
-                        spawnCounter = Rand.RangeInclusive(element.numberToSpawn.min, element.numberToSpawn.max) + extraGeneration;
-                    }
-                    foreach (IntVec3 c in tmpTerrain)
-                    {
-                        bool canSpawn = CanSpawnAt(c, element);
-                        if (canSpawn)
+                        Thing thing = (Thing)ThingMaker.MakeThing(element.thingDef, null);
+                        CellRect occupiedRect = GenAdj.OccupiedRect(c, thing.Rotation, thing.def.Size);
+                        if (occupiedRect.InBounds(map))
                         {
-                            Thing thing = (Thing)ThingMaker.MakeThing(element.thingDef, null);
-                            CellRect occupiedRect = GenAdj.OccupiedRect(c, thing.Rotation, thing.def.Size);
-                            if (occupiedRect.InBounds(map))
+                            canSpawn = true;
+                            foreach (IntVec3 c2 in occupiedRect)
                             {
-                                canSpawn = true;
-                                foreach (IntVec3 c2 in occupiedRect)
+                                if (!CanSpawnAt(c2, element))
                                 {
-                                    if (!CanSpawnAt(c2, element))
-                                    {
-                                        canSpawn = false;
-                                        break;
-                                    }
-                                }
-                                if (canSpawn)
-                                {
-                                    GenSpawn.Spawn(thing, c, map);
-                                    spawnCounter--;
+                                    canSpawn = false;
+                                    break;
                                 }
                             }
+                            if (canSpawn)
+                            {
+                                GenSpawn.Spawn(thing, c, map);
+                                spawnCounter--;
+                            }
                         }
+                    }
 
-                        if (canSpawn && spawnCounter <= 0)
-                        {
-                            spawnCounter = 0;
-                            break;
-                        }
+                    if (canSpawn && spawnCounter <= 0)
+                    {
+                        spawnCounter = 0;
+                        break;
                     }
                 }
             }
