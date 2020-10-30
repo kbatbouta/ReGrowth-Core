@@ -12,18 +12,14 @@
 		<tickerType>Normal</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
-				<moteDef>Mote_AirPuff</moteDef>
+				<moteDef>RG_Mote_WaterFog</moteDef>
 				<tickInterval>60~100</tickInterval>
 				<size>2~6</size>
 				<rotationRate>-60~60</rotationRate>
 				<velocityAngle>0~360</velocityAngle>
 				<velocitySpeed>0.6~0.75</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~100</reqTempRangeToSpawn>
-				<reqTimeRangeToSpawn>
-					<li>5~10</li>
-					<li>19~22</li>
-				</reqTimeRangeToSpawn>
+				<reqTempRangeToSpawn>-200~-15</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>
@@ -38,18 +34,14 @@
 		<tickerType>Normal</tickerType>
 		<terrainComps>
 			<li Class="ReGrowthCore.TerrainCompProperties_MoteSpawner">
-				<moteDef>Mote_AirPuff</moteDef>
+				<moteDef>RG_Mote_WaterFog</moteDef>
 				<tickInterval>60~100</tickInterval>
 				<size>2~6</size>
 				<rotationRate>-60~60</rotationRate>
 				<velocityAngle>0~360</velocityAngle>
 				<velocitySpeed>0.6~0.75</velocitySpeed>
 				<instanceColor>(0.75,0.75,0.75)</instanceColor>
-				<reqTempRangeToSpawn>-200~100</reqTempRangeToSpawn>
-				<reqTimeRangeToSpawn>
-					<li>5~10</li>
-					<li>19~22</li>
-				</reqTimeRangeToSpawn>
+				<reqTempRangeToSpawn>-200~-15</reqTempRangeToSpawn>
 				<enableSettingsSpawnFogOnHotSprings>true</enableSettingsSpawnFogOnHotSprings>
 			</li>
 		</terrainComps>
